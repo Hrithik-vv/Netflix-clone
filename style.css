@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+   
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+.header,body,section {
+    border-bottom: 5px solid #535251;
+}
+body{
+    background-color: #000;
+    color: white;
+}
+.header{
+    /*bg and netflix*/
+    width:100%;
+    height: 100vh;
+    background-image:  linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7) ),
+      url('./bg 1st.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+/*sing in button*/
+nav button{
+    border: 0;
+    outline: 0;
+    background: #db001d ;
+    color:#fff;
+    padding: 7px 20px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+    gap: 8px;
+   
+}
+.language{
+    display: inline-flex;
+    align-items: center;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.4) ),transparent;
+    border:1px solid rgb(145, 138, 124);
+    padding: 7px 10px;
+    color: white;
+    
+}
+.language img{
+    width: 15px;
+    margin-left: 10px;
+    
+}
+.header-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+}
+.Singbutton{
+    display: flex;
+    justify-content: center;
+}
+/* Header content styles*/
+.header-content{
+    margin: auto;
+    width: 800px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.header-content h1,.header-content p{
+    margin-top: 20px;  
+
+}
+.header-content h1{
+    font-size: 41px;
+    font-weight: bold;
+}
+.header-content p{
+    font-size: 15px;
+    font-weight: 200;
+}
+.email-container{
+    display: flex;
+    height: 42px;
+    gap: 4px;
+    width: 57%;
+    margin-top: 24px;
+    
+}
+.email-container > input{
+   flex-grow: 1;
+   border: 0;
+   padding: 0 10px;
+   font-size: 10px;
+   border-radius: 3px;
+   background: linear-gradient(
+    rgba(222, 218, 218, 0.184), 
+    rgba(216, 212, 212, 0.259) ),transparent;
+}
+::placeholder{
+    color: #cec0c0;
+    font-size: 13px;
+}
+.btn{
+    background-color: #E50914;
+    border: 0;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 16px;
+}
+.get-stared-btn{
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    width: 159px;
+}
+/* Body section*/
+.second-section{
+    display: flex;
+    align-items: center;
+    padding:40px 100px;
+}
+.left-item h1,.right-item h1{
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+.left-item p, .right-item p{
+    font-size: 20px;
+
+}
+.right-item{
+    position: relative;
+}
+.right-item > video {
+    position: absolute;
+    left: 70px;
+    top: 20%;
+    z-index: -1;
+    width: 500px;
+}
+
+.right-item video{
+    width: 500px;
+}
+.second-right-item{
+    position: relative;
+    
+}
+/*thid content*/
+.third-section{
+    display: flex;
+    align-items: center;
+    padding:40px 100px;
+}
+.third-item h1{
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+.third-item p{
+    font-size: 20px;
+}
+.third-right-item{
+    position: relative;
+}
+.third-right-item >video{
+    position: absolute;
+    left: 121px;
+    top: 8%;
+    z-index: -1;
+    width: 389px;
+}
+.layout {
+    
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0 ;
+    display: flex;  
+}
+.layout img{
+    width: 330px;
+    border: 1px solid  #535251;
+    border-radius: 10px;
+}
+.static-letf-item{
+    position: relative; /*non statictiv*/
+
+}
+.faq-container{
+    padding: 40px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+.faq-container >h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.faq{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 1100px;
+    padding: 15px;
+    background-color: #2D2D2D;
+    transition: duration 0.5s;
+}
+.faq >p{
+    font-size: 35px;
+
+}
+.faq:hover{
+    background-color: #736c6c;
+}
+.faq-container >p{
+    font-size: 30px;
+    margin: 20px 0;
+}
+/*Footer section*/
+.footer-container{
+    padding: 100px;
+}
+.footer-container, .footer-container a{  
+    color:#afafaf;
+}
+.links-container{
+   display: flex;
+   gap: 20px;
+   justify-content: space-between;
+   padding: 40px 0;
+}
+.links-ites{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.last-test{
+    font-size: 8px;
+    gap: 10px;
+   
+}
+
